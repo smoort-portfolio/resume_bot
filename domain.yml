@@ -13,6 +13,8 @@ intents:
 - who_is_the_boss
 - who_is_great
 - who_is_best
+- about_me
+- current_time
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -29,7 +31,34 @@ responses:
   - text: I am a bot, powered by Rasa.
   utter_dadistheboss:
   - text: Daddy is the boss
+  - text: Saravanan is the boss
   utter_dadisthegreatest:
   - text: Daddy is the greatest
+  - text: Saravanan is the greatest
   utter_dadisthebest:
   - text: Daddy is the best
+  - text: Saravanan is the best
+  utter_about_me:
+  - text: Saravanan is the smartest person in the whole world. He was born on 2nd August 1976.  He graduated from Guindy Engineering College with a degree in Mechanical Engineering.  He works for JP Morgan Chase currently.  He is also the strongest avenger in PFC 23102.
+  utter_current_time:
+  - text: Current time is {current_time}
+  utter_ask_first_name:
+  - text: Please enter first name
+  utter_ask_last_name:
+  - text: Please enter last name
+  utter_slot_values:
+  - text: "Please find below data entered: \n
+            - First Name : {first_name}\n
+            - Last Name  : {last_name}"
+
+forms:
+  - name_form
+slots:
+  first_name:
+    type: unfeaturized
+  last_name:
+    type: unfeaturized
+
+entities:
+  - first_name
+  - last_name

@@ -91,9 +91,21 @@ nlu:
     - who is the strongest in 23102?
 - intent: who_is_great
   examples: |
-    - who is the greatest
-    - who is great
+    - who is the greatest?
+    - who is great?
 - intent: who_is_best
   examples: |
-    - who is the best
-    - who is best
+    - who is the best?
+    - who is best?
+- intent: about_me
+  examples: |
+    - who is Saravanan?
+    - tell me about Saravanan
+    - tell me about Daddy
+    - what is Saravanan's history?
+- intent: current_time
+  examples: |
+    - what is the time now?
+    - what is the current time?
+    - can you please tell me what is the time now?
+    - what time is it?
